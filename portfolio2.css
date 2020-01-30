@@ -1,0 +1,322 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Righteous', cursive;
+    ;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    border-radius: 100%;
+}
+
+.top a {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*------------------------------------------------------------------------debut nav bar-------------------------------------------------------------- */
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    background: #1e272e;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 1rem;
+}
+
+@media (max-width: 360PX) {
+    .nav {
+        justify-content: center;
+    }
+    .nav-list {
+        margin: 0 1rem;
+    }
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+    color: white;
+}
+
+.nav-list a:hover {
+    background: #00cec9;
+    border-radius: 5px;
+}
+
+.fixed-top li {
+    padding-left: 60px;
+}
+
+.nav-list li {
+    list-style-type: none;
+}
+
+
+/* ---------------------------------------------------------------------------debut parralax ----------------------------------------------------------*/
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box1 {
+    background: linear-gradient(0.25turn, black, #ebf8e1, black);
+    min-height: 100%;
+}
+
+.box2 {
+    background-image: url('./pj.jpg');
+    min-height: 400px;
+    display: flex;
+}
+
+.box3 {
+    background-image: url('./social.jpg');
+    min-height: 400px;
+}
+
+.box4 {
+    background: linear-gradient(0.25turn, black, #ebf8e1, black);
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 200%;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: #111;
+    color: black;
+    padding: 20px;
+    background-color: transparent;
+    text-shadow: 3px 2px 3px white;
+}
+
+p {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 18%;
+    margin-right: 312px;
+    display: block;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+
+/*-------------------------------------------------------------------- fin parralax------------------------------------------------------------------- */
+
+.avis {
+    text-transform: uppercase;
+    padding: 50px 80px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.email {
+    margin-left: 31%;
+}
+
+.objet {
+    margin-left: 35%;
+}
+
+.envoi {
+    margin-left: 20%;
+}
+
+label {
+    text-align: center;
+}
+
+
+/* ----------------------------------------------------------------------projet 1--------------------------------------------------------------------- */
+
+h1,
+h2 {
+    color: white;
+    font-size: 200%;
+}
+
+h1:hover,
+h2:hover {
+    color: black;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-top: 50%;
+    margin-left: 100px;
+}
+
+h2 {
+    margin-top: 21%;
+    margin-left: 600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*------------------------------------------------------------ Style all font awesome icons------------------------------------------------------------ */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.contact-social-icons p {
+    color: white;
+}
+
+.contact-social-icons ul a {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    list-style: none;
+}
+
+.contact-social-icons ul a:hover {
+    color: #090908;
+}
+
+.contact-social-icons ul a li {
+    display: inline-block;
+    padding: 2%;
+}
+
+
+/* -------------------------------------------------------------responsive-----------------------------------------------------------------------*/
+
+@media screen and (min-width: 360px) and (max-width:740px) {
+    .nav-list {
+        padding: 1rem;
+        margin-left: -20px;
+    }
+    .nav-list a {
+        display: block;
+        font-size: 1.2rem;
+        padding: 1rem;
+        color: white;
+    }
+    .nav-list {
+        padding: 1rem;
+        margin-left: -5px;
+    }
+    .centered {
+        float: none;
+        margin-left: -45px;
+        margin-right: auto;
+        margin-top: auto;
+    }
+    .box1 {
+        background: linear-gradient(0.25turn, black, #ebf8e1, black);
+    }
+    img {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .ptext {
+        position: none;
+        top: 0%;
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-size: 136%;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        margin-top: 66px;
+    }
+    .box1 {
+        min-height: 450px;
+    }
+    h1 {
+        margin-top: 80%;
+        margin-left: 20%;
+    }
+    h2 {
+        margin-top: 94%;
+        margin-left: 0%;
+    }
+    .email {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .objet {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width:360px) {
+    .email {
+        margin-top: 14% margin-left: 9%;
+    }
+}
